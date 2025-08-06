@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ISKCON Youth Forum</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img
+              src="iygLogo-square.jpg"
+              alt="ISKCON logo with Om symbol in saffron and white"
+              class="logo-img"
+            />
+            <span class="logo-text">ISKCON Youth Forum</span>
+          </div>
+          <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="mainNav">
+            <ul>
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#mentors">Mentors</a></li>
+              <li><a href="#volunteers">Volunteers</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#shlokas">Shlokas</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#deity-darshan" id="darshan">Deity Darshan</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Welcome to ISKCON Youth Forum</h1>
+            <p>
+              Join our community of young devotees in exploring the timeless
+              wisdom of the Bhagavad Gita and Srimad Bhagavatam. Discover
+              spiritual growth, meaningful connections, and purpose through
+              Krishna consciousness.
+            </p>
+            <a href="#courses" class="btn">Explore Courses</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="mentors">
+        <div class="container">
+          <h2 class="section-title">Our Mentors</h2>
+          <div class="team-grid">
+            <div class="team-card">
+              <img
+                src="mentor/2.jpg"
+                alt="HG Abhiram Nimai Das"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>HG Abhiram Nimai Das</h3>
+                <p class="team-role">Youth Counselor</p>
+                <p>
+                  Expert in Vedic philosophy for youth, organizes retreats and
+                  workshops across India.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="mentor/1.jpg"
+                alt="HG Sridham Govind Das"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>HG Sridham Govind Das</h3>
+                <p class="team-role">Senior Mentor</p>
+                <p>
+                  20+ years of devotional service. Specializes in Bhagavad-gita
+                  studies and mantra meditation.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="mentor/3.jpg"
+                alt="HG Krishna Radhakanta Das"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>HG Krishna Radhakanta Das</h3>
+                <p class="team-role">Bhakti Yoga Instructor</p>
+                <p>
+                  Focuses on empowering young women through Krishna
+                  consciousness and Vedic traditions.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="mentor/5.jpg"
+                alt="HG Suhrt Sudamavipra Das"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>HG Suhrt Sudamavipra Das</h3>
+                <p class="team-role">Men's Forum Head</p>
+                <p>
+                  Focuses on empowering young women through Krishna
+                  consciousness and Vedic traditions.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="mentor/4.jpg"
+                alt="HG Purnesvari Radhika Devi Dasi"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>HG Purnesvari Radhika Devi Dasi</h3>
+                <p class="team-role">Women's Forum Head</p>
+                <p>
+                  Focuses on empowering young women through Krishna
+                  consciousness and Vedic traditions.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img
+                src="mentor/6.jpg"
+                alt="Bhakta Titan Saha"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Bhakta Titan Saha</h3>
+                <p class="team-role">Youth Co-ordinator</p>
+                <p>
+                  Focuses on empowering young women through Krishna
+                  consciousness and Vedic traditions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="volunteers">
+        <div class="container">
+          <h2 class="section-title">Volunteer Opportunities</h2>
+          <div class="team-grid">
+            <div class="team-card">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/862db196-a4c1-4586-a594-81a5d9c993ac.png"
+                alt="Group of young devotees cooking in ISKCON temple kitchen"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Kitchen Seva</h3>
+                <p class="team-role">Food Preparation</p>
+                <p>
+                  Assist in preparing delicious Krishna prasadam for temple
+                  offerings and distribution.
+                </p>
+                <a href="#contact" class="btn" style="margin-top: 1rem"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29747fae-63e5-4c79-bf77-5f03cd4939d8.png"
+                alt="Volunteers distributing books at busy city intersection"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Book Distribution</h3>
+                <p class="team-role">Outreach Program</p>
+                <p>
+                  Share Srila Prabhupada's books with people from all walks of
+                  life.
+                </p>
+                <a href="#contact" class="btn" style="margin-top: 1rem"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6ce7b1fd-3693-4c2b-a39a-d5f68d3561a7.png"
+                alt="Youth group cleaning temple courtyard with brooms"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Temple Maintenance</h3>
+                <p class="team-role">Cleaning Service</p>
+                <p>
+                  Help maintain the sacred temple environment through cleaning
+                  and gardening.
+                </p>
+                <a href="#contact" class="btn" style="margin-top: 1rem"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses">
+        <div class="container">
+          <h2 class="section-title">Upcoming Courses</h2>
+          <div class="courses-grid">
+    <div class="course-card">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d976e6fa-0341-4301-91cd-31b529f2fac2.png"
+            alt="Bhagavad-gita book with prayer beads on wooden table"
+            class="team-img"
+          />
+          <div class="course-info">
+            <h3>Basics of Sanatana Dharma</h3>
+            <p class="course-duration">6 Days/Week Workshop</p>
+            <p>
+              Discover the essence of Krishna's teachings in this foundational
+              course perfect for beginners.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK8lyMZqHzcloEVrMvxvQt_sWygGuWjYcjNdfwwd-ghGV1Jw/viewform?usp=sharing&ouid=108926768201735170060" class="btn" style="margin-top: 1rem"
+              target="_blank">Register</a
+            >
+          </div>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d976e6fa-0341-4301-91cd-31b529f2fac2.png"
+            alt="Bhagavad-gita book with prayer beads on wooden table"
+            class="team-img"
+          />
+          <div class="course-info">
+            <h3>Bhagavad Gita: The Song of God</h3>
+            <p class="course-duration">4 Weeks Course</p>
+            <p>
+              Discover the essence of Krishna's teachings in this foundational
+              course perfect for beginners.
+            </p>
+            <a href="/index.html#contact" class="btn" style="margin-top: 1rem"
+              >Register</a
+            >
+          </div>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d976e6fa-0341-4301-91cd-31b529f2fac2.png"
+            alt="Bhagavad-gita book with prayer beads on wooden table"
+            class="team-img"
+          />
+          <div class="course-info">
+            <h3>Discovering Srila Prabhupada (Seminar)</h3>
+            <p class="course-duration">4 Weeks Course</p>
+            <p>
+              Discover the essence of Krishna's teachings in this foundational
+              course perfect for beginners.
+            </p>
+            <a href="/index.html#contact" class="btn" style="margin-top: 1rem"
+              >Register</a
+            >
+          </div>
+        </div>
+          </div>
+          <a
+            href="courses.html"
+            class="btn show-more-container show-more-button"
+            >Show More</a
+          >
+        </div>
+      </section>
+
+      <section id="shlokas">
+        <div class="container">
+          <h2 class="section-title">Daily Shloka</h2>
+          <div class="shloka-container">
+            <div class="shloka-text" id="shlokaText">
+              "yada yada hi dharmasya glanir bhavati bharata<br />
+              abhyutthanam adharmasya tadatmanam srjamy aham"
+            </div>
+            <div class="shloka-meaning" id="shlokaMeaning">
+              "Whenever and wherever there is a decline in religious practice, O
+              descendant of Bharata, and a predominant rise of irreligion—at
+              that time I descend Myself."
+            </div>
+            <div class="shloka-reference" id="shlokaReference">
+              - Bhagavad-gita 4.7
+            </div>
+          </div>
+          <div class="shloka-nav">
+            <button class="shloka-btn" id="prevShloka">Previous</button>
+            <button class="shloka-btn" id="nextShloka">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="events">
+        <div class="container">
+          <h2 class="section-title">Our Past Events</h2>
+          <div class="team-grid">
+
+              <div class="team-card">
+              <img
+                src="https://drive.google.com/thumbnail?id=11CHPE4ahglgczBqq3aIcAY1aOGFKZC_4"
+                alt="Youth kirtan festival with mridanga and kartals"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Jhulan Yatra</h3>
+                <p>
+                  Watch highlights from our spiritual music event featuring
+                  devotees from across the region.
+                </p>
+                <div class="event-links">
+                  <!-- <a href="[YOUTUBE_LINK]" class="btn" target="_blank"
+                    ><i class="fab fa-youtube"></i> Watch Videos</a
+                  > -->
+                  <a href="[DRIVE_LINK]" class="btn" target="_blank"
+                    ><i class="fab fa-google-drive"></i> View Photos</a
+                  >
+                  <!-- <a href="[BLOG_LINK]" class="btn" target="_blank"
+                    ><i class="fas fa-blog"></i> Read Blog</a
+                  > -->
+                </div>
+              </div>
+            </div>
+           <div class="team-card">
+              <img
+                src="https://drive.google.com/thumbnail?id=1favZHqL2HuoypP3r2hLIt3GOhT9NBMfl"
+                alt="Youth kirtan festival with mridanga and kartals"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Food For Life</h3>
+                <p>
+                  Watch highlights from our spiritual music event featuring
+                  devotees from across the region.
+                </p>
+                <div class="event-links">
+                  <!-- <a href="[YOUTUBE_LINK]" class="btn" target="_blank"
+                    ><i class="fab fa-youtube"></i> Watch Videos</a
+                  > -->
+                  <a href="https://drive.google.com/drive/folders/1Yn7nfzr43-lXrfM9oSNWd2qbi5VksRoJ?usp=drive_link" class="btn" target="_blank"
+                    ><i class="fab fa-google-drive"></i> View Photos</a
+                  >
+                  <!-- <a href="[BLOG_LINK]" class="btn" target="_blank"
+                    ><i class="fas fa-blog"></i> Read Blog</a
+                  > -->
+                </div>
+              </div>
+            </div>
+           <div class="team-card">
+              <img
+                src="https://drive.google.com/thumbnail?id=17AVkua_gVEGnC3RZ3a1q3wrB4s-fhSOI"
+                alt="Youth kirtan festival with mridanga and kartals"
+                class="team-img"
+              />
+              <div class="team-info">
+                <h3>Free Medical Camp</h3>
+                <p>
+                  Watch highlights from our spiritual music event featuring
+                  devotees from across the region.
+                </p>
+                <div class="event-links">
+                  <!-- <a href="[YOUTUBE_LINK]" class="btn" target="_blank"
+                    ><i class="fab fa-youtube"></i> Watch Videos</a
+                  > -->
+                  <a href="https://drive.google.com/drive/folders/1Yn7nfzr43-lXrfM9oSNWd2qbi5VksRoJ?usp=drive_link" class="btn" target="_blank"
+                    ><i class="fab fa-google-drive"></i> View Photos</a
+                  >
+                  <!-- <a href="[BLOG_LINK]" class="btn" target="_blank"
+                    ><i class="fas fa-blog"></i> Read Blog</a
+                  > -->
+                </div>
+              </div>
+          </div>
+        </div>
+        <a href="events.html" class="btn show-more-container show-more-button"
+          >Show More</a
+        >
+      </section>
+
+      <section id="deity-darshan">
+        <div class="container">
+          <h2 class="section-title">Deity Darshan</h2>
+          <div class="deity-grid">
+            <div class="deity-card">
+              <a
+                href="https://drive.google.com/file/d/1-FKPgFykE1p-YDF6bzCNAYBbsoueS6pF/view"
+                target="_blank"
+              >
+                <img src="deity-darshan/1.jpg" alt="Deity 1" class="team-img" />
+              </a>
+            </div>
+            <div class="deity-card">
+              <a
+                href="https://drive.google.com/file/d/1-ymRbPO8Ne3Xk-3h-nxy1FGDnNWROYIK/view"
+                target="_blank"
+              >
+                <img src="deity-darshan/2.jpg" alt="Deity 1" class="team-img" />
+              </a>
+            </div>
+            <div class="deity-card">
+              <a
+                href="https://drive.google.com/file/d/106eDZ4FxmAp2-9Dhb4hKAXV2IMc8zFw9/view"
+                target="_blank"
+              >
+                <img src="deity-darshan/3.jpg" alt="Deity 1" class="team-img" />
+              </a>
+            </div>
+          </div>
+          <a
+            href="deityDarshan.html"
+            class="btn show-more-container show-more-button"
+            >Show More</a
+          >
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <form id="contactForm" name="submit-to-google-sheet">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="Email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="Phone" />
+            </div>
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="Interest">
+                <option value="">Select an option</option>
+                <option value="Service">Service</option>
+                <option value="volunteering">Volunteering</option>
+                <option value="courses">Courses</option>
+                <option value="donations">Donations</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="logo" style="justify-content: center">
+          <img src="iygLogo-square.jpg" alt="ISKCON logo" class="logo-img" />
+          <span class="logo-text">ISKCON Youth Forum</span>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#mentors">Mentors</a>
+          <a href="#volunteers">Volunteers</a>
+          <a href="#courses">Courses</a>
+          <a href="#shlokas">Shlokas</a>
+          <a href="#events">Events</a>
+          <a href="deityDarshan.html">Deity Darshan</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a
+            href="mailto:agartalaiyf@gmail.com"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/share/1FF1mA624o/"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/iyfagartala?igsh=d3htYjZzNHo1b2R5"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@iyfagartala"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://chat.whatsapp.com/L6XVottP06e0R64sku74Gk?mode=ac_tt"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+        <p class="copyright">
+          © 2025 ISKCON Youth Forum Agartala. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script>
+
+    </script> -->
+  </body>
+</html>
