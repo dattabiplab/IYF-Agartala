@@ -421,7 +421,8 @@ body.dark-mode select {
 	font-size: 0.9rem;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) { */
+  @media only screen and (max-width: 600px) {
 	.header-content {
 	  flex-direction: column;
 	  align-items: flex-start;
@@ -442,7 +443,7 @@ body.dark-mode select {
 	}
 
 	nav.active {
-	  max-height: 500px;
+	  max-height: 450px;
 	}
 
 	nav ul {
