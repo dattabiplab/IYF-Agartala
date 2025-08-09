@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>ISKCON Youth Forum</title>
-    <link rel="icon" type="image/x-icon" href="/iygLogo-circle.ico">
+    <link rel="icon" type="image/x-icon" href="/iygLogo-circle.ico" />
 
     <link
       rel="stylesheet"
@@ -21,9 +21,10 @@
         <!-- https://drive.google.com/thumbnail?id= -->
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=12T15F1EsPrCOhGfc0XO2VkUW23U4yfsA" -->
           <img
-            src="https://drive.google.com/thumbnail?id=12T15F1EsPrCOhGfc0XO2VkUW23U4yfsA"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+            src="Course/Self-realisation.png"
+            alt="Book Reading: The Science of Self-Realization"
             class="team-img"
           />
           <div class="course-info">
@@ -42,9 +43,10 @@
         </div>
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=11z6x-hL3e2bPgyIXDmsA12uyImrkI4A4" -->
           <img
-            src="https://drive.google.com/thumbnail?id=11z6x-hL3e2bPgyIXDmsA12uyImrkI4A4"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+            src="Course/Sanatana.jpg"
+            alt="Basics of Sanatana Dharma"
             class="team-img"
           />
           <div class="course-info">
@@ -66,9 +68,10 @@
         </div>
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=121HyYnMITawSuxp_C1ZkFRMBea3GhNBk" -->
           <img
-            src="https://drive.google.com/thumbnail?id=121HyYnMITawSuxp_C1ZkFRMBea3GhNBk"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+            src="Course/gita.jpg"
+            alt="Bhagavad Gita: The Song of God"
             class="team-img"
           />
           <div class="course-info">
@@ -85,9 +88,10 @@
         </div>
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=120DhFrQPrUBWjJNH9w_oPh140kmLUZiV" -->
           <img
-            src="https://drive.google.com/thumbnail?id=120DhFrQPrUBWjJNH9w_oPh140kmLUZiV"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+            src="Course/prabhupada.jpg"
+            alt="Discovering Srila Prabhupada"
             class="team-img"
           />
           <div class="course-info">
@@ -102,10 +106,12 @@
             >
           </div>
         </div>
+
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=11n5rhcCQmEiNb4f2MP6MWKqzh5_93eC_" -->
           <img
-            src="https://drive.google.com/thumbnail?id=11n5rhcCQmEiNb4f2MP6MWKqzh5_93eC_"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+            src="Course/kirtan.jpg"
+            alt="Road to Kirtaniya"
             class="team-img"
           />
           <div class="course-info">
@@ -122,9 +128,10 @@
         </div>
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=11oH92xqvSAmgzLabU_ciSfRZ1bMn0FbF" -->
           <img
-            src="https://drive.google.com/thumbnail?id=11oH92xqvSAmgzLabU_ciSfRZ1bMn0FbF"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+          src="Course/instruction.jpg"
+            alt="Nectar of Instruction: The 11 Jewels of Bhakti"
             class="team-img"
           />
           <div class="course-info">
@@ -141,9 +148,10 @@
         </div>
 
         <div class="course-card">
+          <!-- src="https://drive.google.com/thumbnail?id=125bnB9gb7FTCxpB7ahe7Ttl64BSZgVkU" -->
           <img
-            src="https://drive.google.com/thumbnail?id=125bnB9gb7FTCxpB7ahe7Ttl64BSZgVkU"
-            alt="Bhagavad-gita book with prayer beads on wooden table"
+          src="Course/devotion.jpg"
+            alt="Nectar of Devotion: Dive into the Ocean of Devotion"
             class="team-img"
           />
           <div class="course-info">
@@ -167,38 +175,5 @@
       <!-- <div class="show-more" id="showMore">Show More</div> -->
       <!-- <a href="https://drive.google.com/drive/folders/1-AXhBZbr_RlzU7eQ8cRbRHVZR0lXd6oe?usp=drive_link" class="btn show-more-container show-more-button" >Show More</a> -->
     </div>
-
-    <script>
-      // JavaScript to handle "Show More" functionality
-      const showMoreButton = document.getElementById("showMore")
-      const deityGrid = document.getElementById("deityGrid")
-      // Array of additional deity images and links
-      const additionalDeities = [
-        {
-          link: "YOUR_GOOGLE_DRIVE_LINK_3",
-          thumbnail: "YOUR_THUMBNAIL_IMAGE_LINK_3",
-          alt: "Deity 3",
-        },
-        {
-          link: "YOUR_GOOGLE_DRIVE_LINK_4",
-          thumbnail: "YOUR_THUMBNAIL_IMAGE_LINK_4",
-          alt: "Deity 4",
-        },
-        // Add more deity objects as needed
-      ]
-      showMoreButton.addEventListener("click", () => {
-        additionalDeities.forEach((deity) => {
-          const gridItem = document.createElement("div")
-          gridItem.className = "grid-item"
-          gridItem.innerHTML = `
-                  <a href="${deity.link}" target="_blank">
-                      <img src="${deity.thumbnail}" alt="${deity.alt}">
-                  </a>
-              `
-          deityGrid.appendChild(gridItem)
-        })
-        showMoreButton.style.display = "none" // Hide the "Show More" button after clicking
-      })
-    </script>
   </body>
 </html>

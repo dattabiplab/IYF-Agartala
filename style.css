@@ -59,6 +59,7 @@
   .logo-text {
 	font-size: 1.5rem;
 	font-weight: 700;
+	display: none;
   }
 
   .nav-toggle {
@@ -455,6 +456,7 @@ body.dark-mode select {
 	.logo-text{
 		font-size: 1rem;
 		font-weight: 700;
+		display: contents;
 	}
 
 	.header-content {

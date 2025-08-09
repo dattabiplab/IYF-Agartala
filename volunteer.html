@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>ISKCON Youth Forum</title>
-    <link rel="icon" type="image/x-icon" href="/iygLogo-circle.ico">
+    <link rel="icon" type="image/x-icon" href="/iygLogo-circle.ico" />
 
     <link
       rel="stylesheet"
@@ -18,8 +18,9 @@
       <h2 class="section-title">Volunteer Opportunities</h2>
       <div class="team-grid">
         <div class="team-card">
+          <!-- src="https://drive.google.com/thumbnail?id=12ilEsh0gaZd_j9ddCdfy8hTvuJB7ds3d" -->
           <img
-            src="https://drive.google.com/thumbnail?id=12ilEsh0gaZd_j9ddCdfy8hTvuJB7ds3d"
+            src="Volunteers/iyf.jpg"
             alt="IYF Session Seva"
             class="team-img"
           />
@@ -43,8 +44,9 @@
         </div>
 
         <div class="team-card">
+          <!-- src="https://drive.google.com/thumbnail?id=12bWKDLeFz86NjRUa8lktZ1xa1bKzPuTl" -->
           <img
-            src="https://drive.google.com/thumbnail?id=12bWKDLeFz86NjRUa8lktZ1xa1bKzPuTl"
+            src="Volunteers/digital.jpg"
             alt="Digital Seva"
             class="team-img"
           />
@@ -67,8 +69,9 @@
         </div>
 
         <div class="team-card">
+          <!-- src="https://drive.google.com/thumbnail?id=12b7NOQgXx7DDnLGi9QSAFQOV5jrwAgQU" -->
           <img
-            src="https://drive.google.com/thumbnail?id=12b7NOQgXx7DDnLGi9QSAFQOV5jrwAgQU"
+            src="Volunteers/book.jpg"
             alt="Book Distribution"
             class="team-img"
           />
@@ -91,8 +94,9 @@
         </div>
 
         <div class="team-card">
+          <!-- src="https://drive.google.com/thumbnail?id=12YasrCIcp45go3a_Il7vvHXlFpatwZUU" -->
           <img
-            src="https://drive.google.com/thumbnail?id=12YasrCIcp45go3a_Il7vvHXlFpatwZUU"
+            src="Volunteers/outreach.jpg"
             alt="Outreach Program Seva"
             class="team-img"
           />
@@ -114,11 +118,8 @@
         </div>
 
         <div class="team-card">
-          <img
-            src="https://drive.google.com/thumbnail?id=12TpauGQM_HWm0FrsinswPoYryUdpGnEU"
-            alt="Kirtan Seva"
-            class="team-img"
-          />
+          <!-- src="https://drive.google.com/thumbnail?id=12TpauGQM_HWm0FrsinswPoYryUdpGnEU" -->
+          <img src="Volunteers/kirtan.jpg" alt="Kirtan Seva" class="team-img" />
           <div class="team-info">
             <h3>Kirtan Seva</h3>
             <p>
@@ -137,38 +138,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      // JavaScript to handle "Show More" functionality
-      const showMoreButton = document.getElementById("showMore")
-      const deityGrid = document.getElementById("deityGrid")
-      // Array of additional deity images and links
-      const additionalDeities = [
-        {
-          link: "YOUR_GOOGLE_DRIVE_LINK_3",
-          thumbnail: "YOUR_THUMBNAIL_IMAGE_LINK_3",
-          alt: "Deity 3",
-        },
-        {
-          link: "YOUR_GOOGLE_DRIVE_LINK_4",
-          thumbnail: "YOUR_THUMBNAIL_IMAGE_LINK_4",
-          alt: "Deity 4",
-        },
-        // Add more deity objects as needed
-      ]
-      showMoreButton.addEventListener("click", () => {
-        additionalDeities.forEach((deity) => {
-          const gridItem = document.createElement("div")
-          gridItem.className = "grid-item"
-          gridItem.innerHTML = `
-                  <a href="${deity.link}" target="_blank">
-                      <img src="${deity.thumbnail}" alt="${deity.alt}">
-                  </a>
-              `
-          deityGrid.appendChild(gridItem)
-        })
-        showMoreButton.style.display = "none" // Hide the "Show More" button after clicking
-      })
-    </script>
   </body>
 </html>
