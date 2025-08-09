@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>ISKCON Youth Forum</title>
+    <link rel="icon" type="image/x-icon" href="/iygLogo-circle.ico">
 
     <link
       rel="stylesheet"
@@ -16,7 +17,7 @@
   <body>
 
     <div class="container">
-      <h1 class="section-title">Deity Darshan</h1>
+      <h1 class="section-title">Sudarshan</h1>
       <div class="deity-grid" id="deityGrid">
           <!-- Thumbnails will be added here -->
           <div class="deity-card">
@@ -71,38 +72,5 @@
       <!-- <div class="show-more" id="showMore">Show More</div> -->
       <a href="https://drive.google.com/drive/folders/1-AXhBZbr_RlzU7eQ8cRbRHVZR0lXd6oe?usp=drive_link" class="btn show-more-container show-more-button" >Show More</a>
     </div>
-
-    <script>
-      // JavaScript to handle "Show More" functionality
-      const showMoreButton = document.getElementById('showMore');
-      const deityGrid = document.getElementById('deityGrid');
-      // Array of additional deity images and links
-      const additionalDeities = [
-          {
-              link: 'YOUR_GOOGLE_DRIVE_LINK_3',
-              thumbnail: 'YOUR_THUMBNAIL_IMAGE_LINK_3',
-              alt: 'Deity 3'
-          },
-          {
-              link: 'YOUR_GOOGLE_DRIVE_LINK_4',
-              thumbnail: 'YOUR_THUMBNAIL_IMAGE_LINK_4',
-              alt: 'Deity 4'
-          },
-          // Add more deity objects as needed
-      ];
-      showMoreButton.addEventListener('click', () => {
-          additionalDeities.forEach(deity => {
-              const gridItem = document.createElement('div');
-              gridItem.className = 'grid-item';
-              gridItem.innerHTML = `
-                  <a href="${deity.link}" target="_blank">
-                      <img src="${deity.thumbnail}" alt="${deity.alt}">
-                  </a>
-              `;
-              deityGrid.appendChild(gridItem);
-          });
-          showMoreButton.style.display = 'none'; // Hide the "Show More" button after clicking
-      });
-  </script>
   </body>
 </html>
