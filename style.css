@@ -108,6 +108,7 @@
   section {
 	padding: 4rem 0;
 	border-bottom: 1px solid #eee;
+	margin-bottom: 2rem;
   }
 
   .hero {
@@ -449,13 +450,13 @@ body.dark-mode select {
 	font-size: 0.9rem;
   }
 
-  /* @media (max-width: 768px) { */
+  /* Mobile Responsive Fixes for Section Merging */
   @media only screen and (max-width: 600px) {
 	.logo-text{
-		/* display: none; */
 		font-size: 1rem;
 		font-weight: 700;
 	}
+
 	.header-content {
 	  flex-direction: column;
 	  align-items: flex-start;
@@ -476,7 +477,7 @@ body.dark-mode select {
 	}
 
 	nav.active {
-	  max-height: 450px;
+	  max-height: 550px;
 	}
 
 	nav ul {
@@ -494,13 +495,102 @@ body.dark-mode select {
 	  padding: 1rem;
 	}
 
-	.hero-content h1 {
-	  font-size: 2.5rem;
+	/* Fix section merging on mobile */
+	main {
+	  margin-top: 70px;
+	  padding: 1rem 0;
 	}
 
+	section {
+	  padding: 2.5rem 0;
+	  margin-bottom: 1.5rem;
+	  border-bottom: 2px solid #f0f0f0;
+	}
+
+	/* Ensure clear separation between deity and donation sections */
+	#deity-darshan {
+	  padding-bottom: 3rem;
+	  margin-bottom: 2rem;
+	  border-bottom: 3px solid var(--iskcon-saffron);
+	}
+
+	#donation {
+	  padding-top: 3rem;
+	  margin-top: 2rem;
+	  height: auto;
+	  min-height: auto;
+	  padding-bottom: 2rem;
+	}
+
+	.hero {
+	  height: 60vh;
+	  min-height: 400px;
+	  padding: 2rem 0;
+	}
+
+	.hero-content h1 {
+	  font-size: 2rem;
+	  margin-bottom: 0.8rem;
+	}
+
+	.hero-content p {
+	  font-size: 1rem;
+	  padding: 0 1rem;
+	}
+
+	.section-title {
+	  font-size: 1.8rem;
+	  margin-bottom: 2rem;
+	  padding-top: 1rem;
+	}
+
+	.section-title::after {
+	  width: 60px;
+	  height: 3px;
+	}
+
+	/* Grid adjustments for mobile */
 	.team-grid,
-	.courses-grid {
+	.courses-grid,
+	.deity-grid {
 	  grid-template-columns: 1fr;
+	  gap: 1.5rem;
+	  padding: 0 0.5rem;
+	}
+
+	.team-card,
+	.course-card,
+	.deity-card {
+	  margin-bottom: 1rem;
+	}
+
+	.team-img {
+	  height: 200px;
+	}
+
+	.team-info,
+	.course-info {
+	  padding: 1rem;
+	}
+
+	/* Donation section specific fixes */
+	.donation-container {
+	  padding: 1.5rem;
+	  margin: 1rem 0.5rem 2rem 0.5rem;
+	}
+
+	/* Shloka section fixes */
+	.shloka-container {
+	  margin: 1rem 0.5rem;
+	  padding: 1.5rem;
+	}
+
+	.shloka-text {
+	  font-size: 1rem;
+	}
+
+	.shloka-meaning {
+	  font-size: 0.9rem;
 	}
 
 	/* Footer mobile fixes */
@@ -521,6 +611,55 @@ body.dark-mode select {
 	  flex-wrap: wrap;
 	  gap: 1rem;
 	}
+
+	/* Additional spacing for mobile */
+	.container {
+	  width: 95%;
+	  padding: 0 0.5rem;
+	}
+
+	/* Ensure buttons don't overlap */
+	.btn {
+	  padding: 0.7rem 1.5rem;
+	  font-size: 0.9rem;
+	  margin: 0.5rem 0;
+	}
+
+	/* Event links spacing */
+	.event-links {
+	  gap: 0.3rem;
+	}
+
+	.event-links .btn {
+	  padding: 0.4rem;
+	  font-size: 0.8rem;
+	}
+  }
+
+  /* Extra small devices */
+  @media only screen and (max-width: 400px) {
+	section {
+	  padding: 2rem 0;
+	  margin-bottom: 1rem;
+	}
+
+	#deity-darshan {
+	  padding-bottom: 2.5rem;
+	  margin-bottom: 1.5rem;
+	}
+
+	#donation {
+	  padding-top: 2.5rem;
+	  margin-top: 1.5rem;
+	}
+
+	.hero-content h1 {
+	  font-size: 1.8rem;
+	}
+
+	.section-title {
+	  font-size: 1.5rem;
+	}
   }
 
   /* Added animation */
@@ -537,4 +676,36 @@ body.dark-mode select {
 
   section {
 	animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* Additional fixes to prevent section merging */
+  .section-divider {
+	height: 2px;
+	background: linear-gradient(to right, transparent, var(--iskcon-saffron), transparent);
+	margin: 2rem 0;
+  }
+
+  /* Ensure sections have clear visual boundaries */
+  section:not(:last-child) {
+	position: relative;
+  }
+
+  section:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 2px;
+	background-color: var(--iskcon-saffron);
+	opacity: 0.3;
+  }
+
+  /* Mobile-specific section boundaries */
+  @media only screen and (max-width: 600px) {
+	section:not(:last-child)::after {
+	  width: 60px;
+	  height: 1px;
+	}
   }
