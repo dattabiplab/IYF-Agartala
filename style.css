@@ -471,7 +471,7 @@ body.dark-mode select {
   }
 
   nav.active {
-    max-height: 550px;
+    max-height: 600px;
   }
 
   nav ul {
