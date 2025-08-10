@@ -1,5 +1,3 @@
-
-
 // Mobile Navigation Toggle
 const navToggle = document.getElementById("navToggle")
 const mainNav = document.getElementById("mainNav")
@@ -37,7 +35,7 @@ document.querySelectorAll("nav a").forEach((anchor) => {
 })
 
 // Shloka carousel
-import dailyShlokas from './daily-shloka.js';
+import dailyShlokas from "./daily-shloka.js"
 const shlokas = dailyShlokas
 // const shlokas = [
 //   {
@@ -45,18 +43,6 @@ const shlokas = dailyShlokas
 //     meaning:
 //       "Whenever and wherever there is a decline in religious practice, O descendant of Bharata, and a predominant rise of irreligion—at that time I descend Myself.",
 //     reference: "- Bhagavad-gita 4.7",
-//   },
-//   {
-//     text: "sarva-dharman parityajya mam ekam sambam vraja<br>aham tvam sarva-papebhyo mosayaksyami ma sucah",
-//     meaning:
-//       "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.",
-//     reference: "- Bhagavad-gita 18.66",
-//   },
-//   {
-//     text: "manmana bhava mad-bhakto mad-yaji mam namaskuru<br>mam evaisyasi satyam te pratijane priyo 'si me",
-//     meaning:
-//       "Always think of Me, become My devotee, worship Me and offer your homage unto Me. Thus you will come to Me without fail. I promise you this because you are My very dear friend.",
-//     reference: "- Bhagavad-gita 18.65",
 //   },
 // ]
 
@@ -72,7 +58,7 @@ function updateShloka() {
   shlokaMeaning.textContent = shlokas[currentShloka].meaning
   shlokaReference.textContent = shlokas[currentShloka].reference
 }
-updateShloka();
+updateShloka()
 
 prevBtn.addEventListener("click", () => {
   currentShloka = (currentShloka - 1 + shlokas.length) % shlokas.length
