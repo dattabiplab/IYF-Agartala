@@ -162,6 +162,91 @@ section {
   margin: 1rem auto;
 }
 
+/* prabhupada photo  */
+#prabhu {
+  /* background-color: #f8f3e6; */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Changed from space-between to center */
+  min-height: 100vh;
+  color: #333;
+  text-align: center; /* Added to center text content */
+}
+
+.prabhupada {
+  max-width: 90vw; /* Changed from 800px to 90vw for responsiveness */
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.photo-container {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.portrait {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e0d6c2;
+  object-fit: contain; /* Ensure image scales properly */
+}
+
+.title {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #8c1e1e;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #8c1e1e;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.pranam-mantra {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .prabhupada {
+    padding: 15px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .prabhupada {
+    max-width: 95vw; /* Increase max width on smaller screens */
+  }
+  .portrait {
+    max-width: 90vw; /* Make image more responsive on mobile */
+  }
+  .pranam-mantra {
+    font-size: 1rem;
+  }
+}
+
 .team-grid,
 .courses-grid,
 .deity-grid {
@@ -418,6 +503,7 @@ body.dark-mode {
 }
 body.dark-mode .team-card,
 body.dark-mode .course-card,
+body.dark-mode .pranam-mantra,
 body.dark-mode form {
   background-color: #1e1e1e;
   color: #f0f0f0;
