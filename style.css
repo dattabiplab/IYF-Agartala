@@ -70,6 +70,8 @@ header {
 nav ul {
   display: flex;
   list-style: none;
+  /* gap: 2rem; */      /* changes */
+  gap: 0.5rem;
   gap: 2rem;
 }
 
@@ -78,16 +80,16 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem;  */
+  padding: 0.5rem 0.2rem;
   border-radius: 4px;
   /* text-align: center; */
+  overflow: visible;
 }
-/* #darshan{
-	display: table-cell;
-	/* padding: 2rem; */
-/* border-top: 0.1rem; */
-/* margin-top: 0.1rem; */
-/* }  */
+ul a{
+  display: block;
+  text-align: center;
+}
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -163,7 +165,13 @@ section {
 }
 
 /* prabhupada photo  */
+.prabhupada-container{
+  display: list-item;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
 
+  }
 .prabhupada {
   display: flex;
   align-items: center;
