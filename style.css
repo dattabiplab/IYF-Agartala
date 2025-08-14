@@ -556,7 +556,7 @@ body.dark-mode select {
   nav a {
     display: block;
     font-size: small;
-    font-weight: 200;
+    font-weight: 500;
     padding: 2px;
     margin: 2px;
     /* padding: 1rem; */
