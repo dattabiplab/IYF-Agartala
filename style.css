@@ -130,6 +130,11 @@ section {
   max-width: 800px;
   margin: 0 auto 2rem;
 }
+.hero-content li {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 0.1rem;
+}
 
 .btn {
   display: inline-block;
@@ -148,6 +153,12 @@ section {
   color: var(--iskcon-saffron);
 }
 
+.sec {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--iskcon-dark);
+  position: relative;
+}
 .section-title {
   text-align: center;
   margin-bottom: 3rem;
@@ -436,6 +447,15 @@ footer {
   padding: 0.5rem;
   font-size: 0.9rem;
   /* margin-top: 0.1rem; */
+}
+.initials{
+  /* position: fixed; */
+  /* position: sticky; */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-size: xx-small;
+  color: cyan;
 }
 /* DARK MODE  */
 .dark-mode-toggle {
