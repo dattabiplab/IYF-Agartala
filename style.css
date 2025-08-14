@@ -546,7 +546,7 @@ body.dark-mode select {
   nav ul {
     flex-direction: column;
     gap: 0;
-    margin-top: 1rem;
+    margin-top: 0.1rem;
   }
 
   nav li {
@@ -555,6 +555,10 @@ body.dark-mode select {
 
   nav a {
     display: block;
+    font-size: small;
+    font-weight: 200;
+    padding: 2px;
+    margin: 2px;
     /* padding: 1rem; */
   }
 
