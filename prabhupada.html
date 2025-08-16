@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script defer type="module" src="script.js"></script>
+    <title>Srila Prabhupada</title>
     <style>
+      header {
+        padding: 0.5rem 0;
+      }
       .hero-content {
         text-align: justify;
       }
@@ -24,15 +33,15 @@
         margin: 1rem auto;
       }
       ul {
-        font-size: 1.2rem;
-        max-width: 800px;
+        /* font-size: 1.2rem; */
+        /* max-width: 800px; */
         margin: 0 auto 2rem;
       }
       .portrait {
         height: 500px;
         width: auto;
       }
-      .prabhupada-image{
+      .prabhupada-image {
         display: block;
         margin: 50px auto;
         border-radius: 10px;
@@ -41,180 +50,249 @@
         object-fit: contain;
       }
       @media only screen and (max-width: 600px) {
-        .prabhupada-image{
+        .prabhupada-image {
           max-width: 90vw;
         }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2 class="section-title">We Offer Our Humble Obeisance To</h2>
-      <div class="photo-container">
-        <img
-          src="Images/Prabhupada/prabhupada1.jpg"
-          alt="His Divine Grace A.C. Bhaktivedanta Swami Prabhupada in traditional saffron robes, sitting in meditation pose with serene expression and warm lighting"
-          class="portrait"
-          width="300"
-          height="500"
-        />
-      </div>
-      <!-- <div class="text-content"> -->
-      <div class="prabhupada-container">
-        <div class="prabhupada-text">
-          <p class="name">His Divine Grace</p>
-          <h1 class="name">A.C. Bhaktivedanta Swami Prabhupada</h1>
-          <p class="title">
-            Founder-Ācārya of the International Society for Krishna
-            Consciousness
-          </p>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/index.html"><img
+              src="Images/Logo/iygLogo-square.jpg"
+              alt="ISKCON logo"
+              class="logo-img"
+            /></a>
+            <span class="logo-text">ISKCON Youth Forum</span>
+          </div>
+          <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="mainNav">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="/prabhupada.html" class="active">Śrīla Prabhupāda</a>
+              </li>
+              <li><a href="/courses.html">Courses</a></li>
+              <li><a href="/volunteer.html">Volunteers</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/activities.html">Activities</a></li>
+              <li><a href="/trips.html">Spiritual Tours</a></li>
+              <li><a href="/index.html#mentors">Mentors</a></li>
+              <li><a href="/festivals.html">Festivals</a></li>
+              <li><a href="/index.html#shlokas">Shlokas</a></li>
+              <li><a href="/deityDarshan.html" id="darshan">Darshanam</a></li>
+              <li><a href="/donation.html">Donation</a></li>
+              <li><a href="/index.html#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
-        <div class="pranam-mantra">
-          <p>
-            <br /><em
-              >nama om vishnu-padaya krishna-preshthaya bhu-tale<br />srimate
-              bhaktivedanta-svamin iti namine</em
-            >
-          </p>
-          <p>
-            <em
-              >namas te sarasvate deve gaura-vani-pracarine<br />nirvisesha-sunyavadi-pascatya-desa-tarine</em
-            >
-          </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2 class="section-title">We Offer Our Humble Obeisance To</h2>
+        <div class="photo-container">
+          <img
+            src="Images/Prabhupada/prabhupada1.jpg"
+            alt="His Divine Grace A.C. Bhaktivedanta Swami Prabhupada in traditional saffron robes, sitting in meditation pose with serene expression and warm lighting"
+            class="portrait"
+            width="300"
+            height="500"
+          />
+        </div>
+        <!-- <div class="text-content"> -->
+        <div class="prabhupada-container">
+          <div class="prabhupada-text">
+            <p class="name">His Divine Grace</p>
+            <h1 class="name">A.C. Bhaktivedanta Swami Prabhupada</h1>
+            <p class="title">
+              Founder-Ācārya of the International Society for Krishna
+              Consciousness
+            </p>
+          </div>
+          <div class="pranam-mantra">
+            <p>
+              <br /><em
+                >nama om vishnu-padaya krishna-preshthaya bhu-tale<br />srimate
+                bhaktivedanta-svamin iti namine</em
+              >
+            </p>
+            <p>
+              <em
+                >namas te sarasvate deve gaura-vani-pracarine<br />nirvisesha-sunyavadi-pascatya-desa-tarine</em
+              >
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <section class="about">
-      <h2 class="section-title">About Śrīla Prabhupāda</h2>
-      <div class="hero-content">
-        <p>
-          ISKCON is a non-profit organization that works for social welfare. He
-          was a genuine holy person with enormous integrity and compassion, and
-          he had a powerful impact on those who met him. He never claimed
-          authority and respect for himself; what he said and did was always in
-          the name of Krishna” – Dr Thomas J. Hopkins.
-        </p>
-        <p>
-          When His Divine Grace A.C. Bhaktivedanta Swami Śrīla Prabhupāda
-          entered the port of New York City on September 17, 1965 few Americans
-          took notice — but he was not merely another immigrant. He was on a
-          mission to introduce the ancient teachings of Vedic India into
-          mainstream America. Before Śrīla Prabhupāda passed away on November
-          14, 1977 at the age of 81, his mission proved successful. He had
-          founded the International Society for Krishna Consciousness (ISKCON)
-          and saw it grow into a worldwide confederation of more than 100
-          temples, ashrams and cultural centers.
-        </p>
-        <img src="Images/Prabhupada/srila-prabhupada0.jpg" alt="" class="prabhupada-image">
-        <h3>Early Life</h3>
-        <p>
-          Śrīla Prabhupāda was born Abhay Charan De on September 1, 1896 to a
-          pious Hindu family in Calcutta. As a youth growing up in
-          British-controlled India, Abhay became involved with Mahatma Gandhi’s
-          civil disobedience movement to secure independence for his nation. It
-          was, however, a 1922 meeting with a prominent scholar and religious
-          leader, Srila Bhaktisiddhanta Sarasvati, which proved most influential
-          on Abhay’s future calling. Srila Bhaktisiddhanta was a leader in the
-          Gaudiya Vaishnava denomination, a monotheistic tradition within the
-          broad Hindu culture, and asked Abhay to bring the teachings of Lord
-          Krishna to the English-speaking world. Abhay became a disciple of
-          Srila Bhaktisiddhanta in 1933, and resolved to carry out his mentor’s
-          request. Abhay, later known by the honorific A.C. Bhaktivedanta Swami
-          Prabhupada, spent the next 32 years preparing for his journey west.
-        </p>
-        <img src="Images/Prabhupada/srila-prabhupada.jpg" alt="" class="prabhupada-image">
-        <h3>Expanding Boundaries</h3>
-        <p>
-          In 1965, at the age of sixty-nine, Śrīla Prabhupāda traveled to New
-          York City aboard a cargo ship. The journey was treacherous, and the
-          elderly spiritual teacher suffered two heart attacks aboard ship.
-          Arriving in the United States with just seven dollars in Indian rupees
-          and his translations of sacred Sanskrit texts, Śrīla Prabhupāda began
-          to share the timeless wisdom of Krishna consciousness. His message of
-          peace and goodwill resonated with many young people, some of whom came
-          forward to become serious students of the Krishna tradition. With the
-          help of these students, Śrīla Prabhupāda rented a small storefront on
-          New York’s Lower East Side to use as a temple. On July 11, 1966, he
-          officially registered his organization in the state of New York,
-          formally founding the International Society for Krishna Consciousness.
-        </p>
-        <img src="Images/Prabhupada/srila-prabhupada2.jpg" alt="" class="prabhupada-image">
-        <p>
-          In the eleven years that followed, Śrīla Prabhupāda circled the globe
-          14 times on lecture tours, bringing the teachings of Lord Krishna to
-          thousands of people on six continents. Men and women from all
-          backgrounds and walks of life came forward to accept his message, and
-          with their help, Śrīla Prabhupāda established ISKCON centers and
-          projects throughout the world. Under his inspiration, Krishna devotees
-          established temples, rural communities, educational institutions, and
-          started what would become the world’s largest vegetarian food relief
-          program. With the desire to nourish the roots of Krishna consciousness
-          in its home, Śrīla Prabhupāda returned to India several times, where
-          he sparked a revival in the Vaishnava tradition. In India, he opened
-          dozens of temples, including large centers in the holy towns of
-          Vrindavan and Mayapur.
-        </p>
-        <h3>His Message to Society</h3>
-        <p>
-          Śrīla Prabhupāda’s most significant contributions, perhaps, are his
-          books. He authored over 70 volumes on the Krishna tradition, which are
-          highly respected by scholars for their authority, depth, fidelity to
-          the tradition, and clarity. Several of his works are used as textbooks
-          in numerous college courses. His writings have been translated into 76
-          languages. His most prominent works include: Bhagavad-gita As It Is,
-          the 30-volume Srimad-Bhagavatam, and the 17-volume Sri
-          Caitanya-caritamrita.
-        </p>
-        <p>Prabhupada’s teachings emphasized:</p>
-        <li>The Science of Bhakti-Yoga: Pure devotion to Krishna as the highest spiritual practice.</li>
-        <li>The Importance of Guru-Disciple Tradition: Receiving knowledge through an unbroken spiritual lineage.</li>
-        <li>Simple Living, High Thinking: Rejecting excessive materialism for a life of spiritual growth.</li>
+      <section class="about">
+        <h2 class="section-title">About Śrīla Prabhupāda</h2>
+        <div class="hero-content">
+          <p>
+            ISKCON is a non-profit organization that works for social welfare.
+            He was a genuine holy person with enormous integrity and compassion,
+            and he had a powerful impact on those who met him. He never claimed
+            authority and respect for himself; what he said and did was always
+            in the name of Krishna” – Dr Thomas J. Hopkins.
+          </p>
+          <p>
+            When His Divine Grace A.C. Bhaktivedanta Swami Śrīla Prabhupāda
+            entered the port of New York City on September 17, 1965 few
+            Americans took notice — but he was not merely another immigrant. He
+            was on a mission to introduce the ancient teachings of Vedic India
+            into mainstream America. Before Śrīla Prabhupāda passed away on
+            November 14, 1977 at the age of 81, his mission proved successful.
+            He had founded the International Society for Krishna Consciousness
+            (ISKCON) and saw it grow into a worldwide confederation of more than
+            100 temples, ashrams and cultural centers.
+          </p>
+          <img
+            src="Images/Prabhupada/srila-prabhupada0.jpg"
+            alt="Srila Prabhupda on his young age with his guru-maharaj Srila Bhaktisiddhanta Sarasvati Thakura"
+            class="prabhupada-image"
+          />
+          <h3>Early Life</h3>
+          <p>
+            Śrīla Prabhupāda was born Abhay Charan De on September 1, 1896 to a
+            pious Hindu family in Calcutta. As a youth growing up in
+            British-controlled India, Abhay became involved with Mahatma
+            Gandhi’s civil disobedience movement to secure independence for his
+            nation. It was, however, a 1922 meeting with a prominent scholar and
+            religious leader, Srila Bhaktisiddhanta Sarasvati, which proved most
+            influential on Abhay’s future calling. Srila Bhaktisiddhanta was a
+            leader in the Gaudiya Vaishnava denomination, a monotheistic
+            tradition within the broad Hindu culture, and asked Abhay to bring
+            the teachings of Lord Krishna to the English-speaking world. Abhay
+            became a disciple of Srila Bhaktisiddhanta in 1933, and resolved to
+            carry out his mentor’s request. Abhay, later known by the honorific
+            A.C. Bhaktivedanta Swami Prabhupada, spent the next 32 years
+            preparing for his journey west.
+          </p>
+          <img
+            src="Images/Prabhupada/srila-prabhupada.jpg"
+            alt="srila prabhupada meets a child"
+            class="prabhupada-image"
+          />
+          <h3>Expanding Boundaries</h3>
+          <p>
+            In 1965, at the age of sixty-nine, Śrīla Prabhupāda traveled to New
+            York City aboard a cargo ship. The journey was treacherous, and the
+            elderly spiritual teacher suffered two heart attacks aboard ship.
+            Arriving in the United States with just seven dollars in Indian
+            rupees and his translations of sacred Sanskrit texts, Śrīla
+            Prabhupāda began to share the timeless wisdom of Krishna
+            consciousness. His message of peace and goodwill resonated with many
+            young people, some of whom came forward to become serious students
+            of the Krishna tradition. With the help of these students, Śrīla
+            Prabhupāda rented a small storefront on New York’s Lower East Side
+            to use as a temple. On July 11, 1966, he officially registered his
+            organization in the state of New York, formally founding the
+            International Society for Krishna Consciousness.
+          </p>
+          <img
+            src="Images/Prabhupada/srila-prabhupada2.jpg"
+            alt="srila prabhupada dancing and doing kirtan with his disciples in rath Yatra"
+            class="prabhupada-image"
+          />
+          <p>
+            In the eleven years that followed, Śrīla Prabhupāda circled the
+            globe 14 times on lecture tours, bringing the teachings of Lord
+            Krishna to thousands of people on six continents. Men and women from
+            all backgrounds and walks of life came forward to accept his
+            message, and with their help, Śrīla Prabhupāda established ISKCON
+            centers and projects throughout the world. Under his inspiration,
+            Krishna devotees established temples, rural communities, educational
+            institutions, and started what would become the world’s largest
+            vegetarian food relief program. With the desire to nourish the roots
+            of Krishna consciousness in its home, Śrīla Prabhupāda returned to
+            India several times, where he sparked a revival in the Vaishnava
+            tradition. In India, he opened dozens of temples, including large
+            centers in the holy towns of Vrindavan and Mayapur.
+          </p>
+          <h3>His Message to Society</h3>
+          <p>
+            Śrīla Prabhupāda’s most significant contributions, perhaps, are his
+            books. He authored over 70 volumes on the Krishna tradition, which
+            are highly respected by scholars for their authority, depth,
+            fidelity to the tradition, and clarity. Several of his works are
+            used as textbooks in numerous college courses. His writings have
+            been translated into 76 languages. His most prominent works include:
+            Bhagavad-gita As It Is, the 30-volume Srimad-Bhagavatam, and the
+            17-volume Sri Caitanya-caritamrita.
+          </p>
+          <p>Prabhupada’s teachings emphasized:</p>
+          <li>
+            The Science of Bhakti-Yoga: Pure devotion to Krishna as the highest
+            spiritual practice.
+          </li>
+          <li>
+            The Importance of Guru-Disciple Tradition: Receiving knowledge
+            through an unbroken spiritual lineage.
+          </li>
+          <li>
+            Simple Living, High Thinking: Rejecting excessive materialism for a
+            life of spiritual growth.
+          </li>
 
-        <img src="Images/Prabhupada/srila-prabhupada3.jpg" alt="" class="prabhupada-image">
-        <h3>His Achievements</h3>
-        <p>
-          Srila Prabhupada came back to India with a wish to cultivate the
-          better roots of Lord Krishna. He opened numerous temples and one of
-          the largest centers of ISKCON in the holy towns of Mayapur and
-          Vrindavana. The most imperative contribution of Srila Prabhupada is
-          conceivably his books. He wrote more than 70 volumes on the tradition
-          of Krishna, which Scholars highly appreciate because of its depth,
-          clarity, and faithfulness toward the tradition. Several colleges have
-          used his work in textbooks, and all his books have been already
-          translated into 76 different languages.
-        </p>
-        <p>
-          His lifetime achievements are innumerable, magnificent, and
-          extraordinary. Some of his achievements are listed below:
-        </p>
-        <li>He dictated a total of 22,000 pages of text.</li>
-        <li>
-          He translated and wrote purports to 18,000 verses of Srimad Bhagwatam
-          and 700 verses of Srimad Bhagwat Gita.
-        </li>
-        <li>
-          He translated and wrote purports to 700 verses of the Srimad Bhagwat
-          Gita and 12,555 Chaitanya Charitamrit.
-        </li>
-        <li>
-          He published 147 books, wrote 7000 letters to his disciples, and
-          brought his magazine Back to Godhead into the mainstream with 1
-          million copies distributed.
-        </li>
-        <li>
-          His Bhagwad Gita lectures are compiled in 7 volumes, and Srimad
-          Bhagwatam in about 12 book volumes.
-        </li>
-        <li>
-          His conversations with scientists, professors, editors have been
-          compiled in 42 volumes. And also produced innumerable recordings.
-        </li>
-        <li>
-          At the age of 70, he started the mission to bring Lord Krishna’s name
-          to every household. In the short span of 9 years, he achieved 5000
-          devotees and established 108 Isckon temples worldwide.
-        </li>
-      </div>
-    </section>
+          <img
+            src="Images/Prabhupada/srila-prabhupada3.jpg"
+            alt="srila prabhupada giving initiation beads to his foreign disciple"
+            class="prabhupada-image"
+          />
+          <h3>His Achievements</h3>
+          <p>
+            Srila Prabhupada came back to India with a wish to cultivate the
+            better roots of Lord Krishna. He opened numerous temples and one of
+            the largest centers of ISKCON in the holy towns of Mayapur and
+            Vrindavana. The most imperative contribution of Srila Prabhupada is
+            conceivably his books. He wrote more than 70 volumes on the
+            tradition of Krishna, which Scholars highly appreciate because of
+            its depth, clarity, and faithfulness toward the tradition. Several
+            colleges have used his work in textbooks, and all his books have
+            been already translated into 76 different languages.
+          </p>
+          <p>
+            His lifetime achievements are innumerable, magnificent, and
+            extraordinary. Some of his achievements are listed below:
+          </p>
+          <li>He dictated a total of 22,000 pages of text.</li>
+          <li>
+            He translated and wrote purports to 18,000 verses of Srimad
+            Bhagwatam and 700 verses of Srimad Bhagwat Gita.
+          </li>
+          <li>
+            He translated and wrote purports to 700 verses of the Srimad Bhagwat
+            Gita and 12,555 Chaitanya Charitamrit.
+          </li>
+          <li>
+            He published 147 books, wrote 7000 letters to his disciples, and
+            brought his magazine Back to Godhead into the mainstream with 1
+            million copies distributed.
+          </li>
+          <li>
+            His Bhagwad Gita lectures are compiled in 7 volumes, and Srimad
+            Bhagwatam in about 12 book volumes.
+          </li>
+          <li>
+            His conversations with scientists, professors, editors have been
+            compiled in 42 volumes. And also produced innumerable recordings.
+          </li>
+          <li>
+            At the age of 70, he started the mission to bring Lord Krishna’s
+            name to every household. In the short span of 9 years, he achieved
+            5000 devotees and established 108 Isckon temples worldwide.
+          </li>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -4,20 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>ISKCON Youth Forum Agartala</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Images/Logo/iygLogo-circle.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Courses</title>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script defer type="module" src="script.js"></script>
+      <style>
+      header {
+        padding: 0.5rem 0;
+      }
+    </style>
   </head>
   <body>
+      <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/index.html"><img
+              src="Images/Logo/iygLogo-square.jpg"
+              alt="ISKCON logo"
+              class="logo-img"
+            /></a>
+            <span class="logo-text">ISKCON Youth Forum</span>
+          </div>
+          <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="mainNav">
+            <ul>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="/prabhupada.html">Śrīla Prabhupāda</a></li>
+              <li><a href="/courses.html">Courses</a></li>
+              <li><a href="/volunteer.html">Volunteers</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/activities.html">Activities</a></li>
+              <li><a href="/trips.html">Spiritual Tours</a></li>
+              <li><a href="/index.html#mentors">Mentors</a></li>
+              <li><a href="/festivals.html">Festivals</a></li>
+              <li><a href="/index.html#shlokas">Shlokas</a></li>
+              <li><a href="/deityDarshan.html" id="darshan">Darshanam</a></li>
+              <li><a href="/donation.html" >Donation</a></li>
+              <li><a href="/index.html#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
     <div class="container">
       <h1 class="section-title">Courses</h1>
       <div class="courses-grid">
@@ -55,7 +95,7 @@
           <!-- src="https://drive.google.com/thumbnail?id=120DhFrQPrUBWjJNH9w_oPh140kmLUZiV" -->
           <img
             src="Images/Course/iyf.png"
-            alt="Discovering Srila Prabhupada"
+            alt="IYF Weekly Session"
             class="team-img"
           />
           <div class="course-info">
@@ -187,7 +227,7 @@
           <!-- src="https://drive.google.com/thumbnail?id=11oH92xqvSAmgzLabU_ciSfRZ1bMn0FbF" -->
           <img
             src="Images/Course/instruction.jpg"
-            alt="Nectar of Instruction: The 11 Jewels of Bhakti"
+            alt="Upadeśāmṛta: The 11 Jewels of Bhakti"
             class="team-img"
           />
           <div class="course-info">
@@ -213,7 +253,7 @@
           <!-- src="https://drive.google.com/thumbnail?id=125bnB9gb7FTCxpB7ahe7Ttl64BSZgVkU" -->
           <img
             src="Images/Course/isopanishad.jpg"
-            alt="Nectar of Devotion: Dive into the Ocean of Devotion"
+            alt="Īśopaniṣad: The Vision of the Supreme - Unveiling the 18 Mantras of Divine Wisdom"
             class="team-img"
           />
           <div class="course-info">
@@ -239,7 +279,7 @@
           <!-- src="https://drive.google.com/thumbnail?id=125bnB9gb7FTCxpB7ahe7Ttl64BSZgVkU" -->
           <img
             src="Images/Course/devotion.jpg"
-            alt="Nectar of Devotion: Dive into the Ocean of Devotion"
+            alt="Bhakti-rasāmṛta-sindhu: Dive into the Ocean of Devotion"
             class="team-img"
           />
           <div class="course-info">
@@ -265,8 +305,7 @@
 
         <!-- Add more grid items as needed -->
       </div>
-      <!-- <div class="show-more" id="showMore">Show More</div> -->
-      <!-- <a href="https://drive.google.com/drive/folders/1-AXhBZbr_RlzU7eQ8cRbRHVZR0lXd6oe?usp=drive_link" class="btn show-more-container show-more-button" >Show More</a> -->
     </div>
+    </main>
   </body>
 </html>

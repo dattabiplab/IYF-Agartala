@@ -4,70 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>ISKCON Youth Forum</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Images/Logo/iygLogo-circle.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Spiritual Tours</title>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script defer type="module" src="script.js"></script>
+    <style>
+      header {
+        padding: 0.5rem 0;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h1 class="section-title">Our Spiritual Trips</h1>
-      <div class="team-grid">
-        <!-- Thumbnails will be added here -->
-        <div class="team-card">
-
-          <img
-            src="Images/Trips/Ujjayanta-palace.jpg"
-            alt="Spiritual Trip to Ujjayanta Palace"
-            class="team-img"
-          />
-          <div class="team-info">
-            <h3>Spiritual Trip to Ujjayanta Palace</h3>
-            <p>
-               Visited On:- 8<sup>th</sup> February 2025
-            </p>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/index.html"><img
+              src="Images/Logo/iygLogo-square.jpg"
+              alt="ISKCON logo"
+              class="logo-img"
+            /></a>
+            <span class="logo-text">ISKCON Youth Forum</span>
           </div>
+          <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="mainNav">
+            <ul>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="/prabhupada.html">Śrīla Prabhupāda</a></li>
+              <li><a href="/courses.html">Courses</a></li>
+              <li><a href="/volunteer.html">Volunteers</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/activities.html">Activities</a></li>
+              <li><a href="/trips.html">Spiritual Tours</a></li>
+              <li><a href="/index.html#mentors">Mentors</a></li>
+              <li><a href="/festivals.html">Festivals</a></li>
+              <li><a href="/index.html#shlokas">Shlokas</a></li>
+              <li><a href="/deityDarshan.html" id="darshan">Darshanam</a></li>
+              <li><a href="/donation.html">Donation</a></li>
+              <li><a href="/index.html#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
-        <div class="team-card">
-
-          <img
-            src="Images/Trips/narkel-kunja_1.jpg"
-            alt="Spiritual Trip to Narkel Kunja Island Resort"
-            class="team-img"
-          />
-          <div class="team-info">
-            <h3>Spiritual Trip to Narkel Kunja Island Resort</h3>
-            <p>
-               Visited On:- 26<sup>th</sup> July 2025
-            </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="section-title">Our Spiritual Tours</h1>
+        <div class="team-grid">
+          <!-- Thumbnails will be added here -->
+          <div class="team-card">
+            <img
+              src="Images/Trips/Ujjayanta-palace.jpg"
+              alt="Spiritual Trip to Ujjayanta Palace"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h3>Spiritual Tour to Ujjayanta Palace</h3>
+              <p>Visited On:- 8<sup>th</sup> February 2025</p>
+            </div>
           </div>
-        </div>
-        <div class="team-card">
-
-          <img
-            src="Images/Trips/gaudiya-math.jpg"
-            alt="Spiritual Trip to Sri Chaitanya Gaudiya Math"
-            class="team-img"
-          />
-          <div class="team-info">
-            <h3>Spiritual Trip to Sri Chaitanya Gaudiya Math</h3>
-            <p>
-               Visited On:- 23<sup>th</sup> November 2025
-            </p>
+          <div class="team-card">
+            <img
+              src="Images/Trips/narkel-kunja_1.jpg"
+              alt="Spiritual Trip to Narkel Kunja Island Resort"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h3>Spiritual Tour to Narkel Kunja Island Resort</h3>
+              <p>Visited On:- 26<sup>th</sup> July 2025</p>
+            </div>
           </div>
-        </div>
+          <div class="team-card">
+            <img
+              src="Images/Trips/gaudiya-math.jpg"
+              alt="Spiritual Trip to Sri Chaitanya Gaudiya Math"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h3>Spiritual Tour to Sri Chaitanya Gaudiya Math</h3>
+              <p>Visited On:- 23<sup>th</sup> November 2025</p>
+            </div>
+          </div>
 
-
-        <!-- sample -->
-        <!-- <div class="team-card">
+          <!-- sample -->
+          <!-- <div class="team-card">
               <img
                 src="https://drive.google.com/thumbnail?id={id}"
                 alt="Youth kirtan festival with mridanga and kartals"
@@ -93,10 +123,9 @@
               </div>
             </div> -->
 
-        <!-- Add more grid items as needed -->
+          <!-- Add more grid items as needed -->
+        </div>
       </div>
-      <!-- <div class="show-more" id="showMore">Show More</div> -->
-      <!-- <a href="https://drive.google.com/drive/folders/1-AXhBZbr_RlzU7eQ8cRbRHVZR0lXd6oe?usp=drive_link" class="btn show-more-container show-more-button" >Show More</a> -->
-    </div>
+    </main>
   </body>
 </html>
