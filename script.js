@@ -9,28 +9,33 @@ navToggle.addEventListener("click", () => {
 // Smooth scrolling for navigation links
 document.querySelectorAll("nav a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault()
-
-    // Close mobile menu if open
-    if (mainNav.classList.contains("active")) {
-      mainNav.classList.remove("active")
-    }
-
     const targetId = this.getAttribute("href")
-    const targetElement = document.querySelector(targetId)
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: "smooth",
-      })
+    // Only prevent default for hashed URLs (internal navigation)
+    if (targetId.startsWith("#")) {
+      e.preventDefault()
 
-      // Update active link
-      document.querySelectorAll("nav a").forEach((link) => {
-        link.classList.remove("active")
-      })
-      this.classList.add("active")
+      // Close mobile menu if open
+      if (mainNav.classList.contains("active")) {
+        mainNav.classList.remove("active")
+      }
+
+      const targetElement = document.querySelector(targetId)
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: "smooth",
+        })
+
+        // Update active link
+        document.querySelectorAll("nav a").forEach((link) => {
+          link.classList.remove("active")
+        })
+        this.classList.add("active")
+      }
     }
+    // Allow normal navigation for absolute URLs (like /courses.html)
   })
 })
 
